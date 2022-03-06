@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>imtihon bootstrap</title>
 </head>
-<body>
+<body class="bg-light">
     
+   <div class="container" >
+       <div class="row mt-5 " >
+           <div class="col-7  bg-white" >
+               <div class="p-4">
+            <h2 class="h2 mt-3 mb-5" >Payment information</h2>
+            <form class="form" autocomplete="off" >
+
+            
+           
+                <label class="form__label form-label px-2 my-3 d-block">
+                    CARD NUMBER
+                    <input class="form__input form-control d-block w-100 " type="number" name="password" min="16" required aria-label="*** *** *** ***" placeholder="*** *** *** ***">
+                </label>
+
+                
+                <label class="form__label my-3">
+                    CARD HOLDER
+                    <input class="form__input d-block ms-2 mb-2  form-control w-100" type="text" name= "username"  required aria-label="name" placeholder="name">
+                </label>
+                 
+        <label class="form__label px-2">
+
+            EXP DATE
+            <input class="form__input d-block form-control px-2" type="datetime" name= "name"  required aria-label="date" placeholder="03/19" required>
+        </label>
+
+
+        <label class="form__label ">
+            CVC
+            <input class="form__input d-block form-control " type="password" name="password" required aria-label=" code" placeholder="***">
+        </label>
+        </form>
+    </div>       
+           </div>
+        
+           <div class="col-5">
+            <div class="box bg-white shadow ">
+
+                <div class="box__picture d-flex justify-content-between   border-bottom pb-2 px-2">
+                    
+                  <div class="cost">
+                    <img class="box__img boder p-2" src="./chocolate.png" width="50"  alt="chocolate-bar-image">
+                    
+                    <p class="box__picture__text fw-bolder d-inline ">chocolate-bar</p>
+                  </div>
+                    <p class="box__picture__text pt-2 d-inline fw-bold ">$2.49</p>
+                
+                </div>
+                
+                <div class="box__picture  d-flex justify-content-between    pt-2 px-2">
+                    
+                    
+                    
+                    <p class="box__picture__text fw-bolder d-inline px-3 ">Subtotal</p>
+                    <p class="box__picture__text  d-inline  ">$3.00</p>
+                
+                </div>
+
+
+                
+                <div class="box__picture d-flex justify-content-between   border-bottom pt-1 pb-2 px-2">
+                    
+                   
+                    
+                    <p class="box__picture__text fw-bolder d-inline  px-3 ">Shipping</p>
+                    <p class="box__picture__text  d-inline  ">$4.98</p>
+                
+                </div>
+
+                   
+                <div class="box__picture d-flex justify-content-between   pt-1 pb-2 px-2">
+                    
+                   
+                    
+                    <p class="box__picture__text  fw-bold d-inline  px-3 ">Total</p>
+                    <p class="box__picture__text fs-5 d-inline fw-bold ">$7.98</p>
+                
+                </div>
+                
+            </div>
+        </div>
+
+       </div>
+       <div class="row mt-5">
+
+        <div class="col-7">
+
+            <div class="box bg-white shadow ">
+
+                <h2 class="box__titles py-3 px-3">
+
+                    Billing address
+
+                </h2>
+
+                <form class="row__form " action="#">
+
+                   
+                    <label class="row__label form-label  border-bottom  d-flex px-3  " >
+                       
+                        <input class="row__input form-check  " type="radio" name="check" aria-label="" placeholder="" required>
+                        <span class=" px-3 pb-3" >Same as the shipping address</span>
+                    </label>
+
+                   
+
+                   <label class="row__label form-label  border-bottom  pb-3 d-flex px-3  " >
+                       
+                    <input class="row__input form-check  " type="radio" name="check" aria-label="" placeholder="" required>
+                    <span class="px-3" >Use a different billing address</span>
+                </label>
+
+                
+
+                </form>
+                
+
+            </div>
+            <div class="row__buttons d-flex justify-content-between mt-3">
+                <button class="btn btn-link text-decoration-none"> Return to  shipping method</button>
+                <button class="btn btn-outline-primary"> Complete order</button>
+            </div>
+        </div>
+       
+        
+        
+        
+    </div>
+
+    
+</div>
+   </div>
+
 </body>
 </html>
